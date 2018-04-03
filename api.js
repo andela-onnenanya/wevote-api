@@ -76,7 +76,7 @@ function onError(error) {
  * @returns {null} server process is continous here, so no returns
  */
 function onListening() {
-  setInterval(addUserNotifications, 1000 * 30);
+  setInterval(addUserNotifications, 1000 * 3);
   const serverDetails = server.address();
   const protocol = `http${(server instanceof https.Server ? 's' : '')}`;
   const bind = typeof addr === 'string'
