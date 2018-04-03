@@ -2,25 +2,25 @@ import logger from 'winston';
 
 export default {
   up(queryInterface, Sequelize) {
-    return queryInterface.createTable('Notifications', {
+    return queryInterface.createTable('UserNotifications', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      code: {
-        allowNull: false,
-        type: Sequelize.TEXT,
-        unique: true,
+      UserId: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
-      group: {
+      NotificationId: {
+        type: Sequelize.INTEGER,
         allowNull: false,
-        type: Sequelize.TEXT
       },
-      message: {
+      read: {
+        type: Sequelize.BOOLEAN,
         allowNull: false,
-        type: Sequelize.TEXT
+        defaultValue: false
       },
       createdAt: {
         allowNull: false,
@@ -39,7 +39,7 @@ export default {
   },
 
   down(queryInterface) {
-    return queryInterface.dropTable('Notifications')
+    return queryInterface.dropTable('UserNotifications')
       .catch(error => logger.error(error));
   }
 };
