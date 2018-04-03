@@ -95,7 +95,7 @@ userRoutes
     checkRequestValidity,
     getUserNotifications
   )
-  .get(
+  .post(
     '/notification/send',
     checkRequestValidity,
     addUserNotifications
