@@ -6,7 +6,7 @@ import { checkRequestValidity } from '../middlewares/validators.middleware';
 import {
   createNotification, updateNotification, getNotifications, deleteNotifications,
   deleteNotification, sendNotification
-} from '../controllers/v1/Notification.controller';
+} from '../controllers/v1/notification.controller';
 
 const notificationRoutes = Router();
 
