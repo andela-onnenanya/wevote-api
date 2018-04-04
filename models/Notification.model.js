@@ -11,6 +11,7 @@ export default class Notification extends Model {
     code: {
       type: Sequelize.TEXT,
       allowNull: false,
+      unique: true,
       validate: {
         is: {
           args: /\w+/ig,
