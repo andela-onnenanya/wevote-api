@@ -28,7 +28,6 @@ export function generateJwt(data) {
  */
 export async function ussd(req, res) {
   const { sessionId, serviceCode, phoneNumber, text } = req.body;
-  console.log('ERERERE', req.body);
   let response = '';
   let accountNumber = '';
   let balance = '';
