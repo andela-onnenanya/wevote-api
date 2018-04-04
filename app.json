@@ -5,7 +5,46 @@
   "logo": "https://static2.stuff.co.nz/1406525193/462/10320462.jpg",
   "keywords": ["node", "Vote"],
   "env": {
+    "ADMIN_EMAIL": {
+      "required": true
+    },
+    "ADMIN_FIRSTNAME": {
+      "required": true
+    },
+    "ADMIN_PASSWORD": {
+      "required": true
+    },
+    "ADMIN_PHONE_NUMBER": {
+      "required": true
+    },
+    "ADMIN_SURNAME": {
+      "required": true
+    },
+    "API_URL": {
+      "required": true
+    },
+    "CLIENT_URL": {
+      "required": true
+    },
     "DATABASE_URL": {
+      "required": true
+    },
+    "FACEBOOK_APP_ID": {
+      "required": true
+    },
+    "FACEBOOK_APP_SECRET": {
+      "required": true
+    },
+    "JWT_SECRET": {
+      "required": true
+    },
+    "PORT": {
+      "required": true
+    },
+    "TWITTER_CONSUMER_KEY": {
+      "required": true
+    },
+    "TWITTER_CONSUMER_SECRET": {
       "required": true
     }
   }
