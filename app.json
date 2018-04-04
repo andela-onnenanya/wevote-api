@@ -5,9 +5,8 @@
   "logo": "https://static2.stuff.co.nz/1406525193/462/10320462.jpg",
   "keywords": ["node", "Vote"],
   "env": {
-    "INHERIT_THIS_CONFIG_VAR": {
+    "DATABASE_URL": {
       "required": true
-    },
-    "DONT_INHERIT_THIS_CONFIG_VAR": "production"
+    }
   }
 }
