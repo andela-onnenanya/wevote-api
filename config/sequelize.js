@@ -27,7 +27,6 @@ export const config = {
 
 if (!devMode) {
   config.ssl = true;
-  config.use_env_variable = 'DATABASE_URL';
   config.dialectOptions.ssl = {
     require: !devMode
   };
