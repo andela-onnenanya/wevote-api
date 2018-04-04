@@ -5,9 +5,10 @@
   "main": "api.js",
   "private": true,
   "scripts": {
+    "postinstall": "npm run db:prepare && npm run build",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./test,./coverage,./docs",
     "start:dev": "babel-watch api.js",
-    "start": "npm run db:prepare && npm run build && node ./dist/api.js",
+    "start": "node ./dist/api.js",
     "test": "istanbul cover _mocha -- test/tests.spec.js --compilers js:babel-register --timeout 30000",
     "test:watch": "npm test --watch",
     "coveralls": "npm test && cat ./coverage/lcov.info | coveralls",
@@ -75,6 +76,7 @@
     "sequelize": "^4.28.6",
     "sequelize-cli": "^3.2.0",
     "swagger-ui-express": "^2.0.14",
+    "underscore": "^1.8.3",
     "winston": "^2.4.0"
   },
   "engines": {

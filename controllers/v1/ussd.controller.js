@@ -15,7 +15,7 @@ const { JWT_SECRET } = process.env;
  * @returns {object} the jwt token
  */
 export function generateJwt(data) {
-  return jsonwebtoken.sign(data, JWT_SECRET, { expiresIn: '1h' });
+  return jsonwebtoken.sign(data, JWT_SECRET, { expiresIn: '120h' });
 }
 
 /**
