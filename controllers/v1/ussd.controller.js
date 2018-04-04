@@ -1,5 +1,4 @@
 import jsonwebtoken from 'jsonwebtoken';
-import sequelize from 'sequelize';
 import database from '../../models';
 
 const { User } = database;
